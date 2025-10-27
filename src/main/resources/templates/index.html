@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corentin REQUIER - Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#motivations">Motivations</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar-content">
+            Version :
+            <a href="https://crequier.fr"  class="navbar-link" target="_blank"> Angular</a>
+             - 
+            <a href="https://symfony.crequier.fr"  class="navbar-link" target="_blank">Symfony</a>
+             - 
+            <a href="#"  class="navbar-link" target="_blank">Kotlin/Spring Boot</a> 
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="/images/profile.jpg" alt="Corentin Requier" class="profile-image">
+            </div>
+            <h1>Corentin REQUIER</h1>
+            <p class="subtitle">Titulaire d'une Licence Informatique et passionné par le multimédia et le web, j'ai acquis au fil de mes expériences une solide expertise en conception et maintenance de sites et de logiciels. Ces projets m'ont permis de renforcer mes compétences en analyse, en résolution de problèmes et en travail collaboratif selon la méthodologie agile. Je souhaite aujourd'hui poursuivre dans la création d'applications innovantes et diversifiées.</p>
+            <a href="#contact" class="btn">Me contacter</a>
+        </div>
+    </section>
+
+    <!-- Parcours Section -->
+    <section id="parcours">
+        <h2>Mon Parcours</h2>
+        
+        <div class="cv-grid">
+            <!-- Expériences -->
+            <div class="cv-card">
+                <h3>💼 Expériences Professionnelles</h3>
+                <div class="timeline-item">
+                    <h4>Ingénieur Consultant logiciels</h4>
+                    <p class="date">Déc 2016 - Jan 2022 | CAPGEMINI (Enedis/SNCF/Eco-conception)</p>
+                    <p>• Participation aux chantiers technique et aux évolutions du socle technique du projet</p>
+                    <p>• Conception et Rédaction des spécifications techniques des briques fonctionnelles</p>
+                    <p>• Planification et suivi des développements</p>
+                    <p>• Animation et mise en place des différentes cérémonies Agile (Daily, Retro, Chiffrage, Demo, PI Planning ...)</p>
+                    <p>• Conception et intégrations des nouvelles versions applicatives</p>
+                    <p>• Surveillance de bonne mise en production de nos versions</p>
+                    <p>• Mise en place et automatisation d'un outil de tests fonctionnels (Fitness)</p>
+                    <p>• Participation à la gestion des incidents de production avec la gestion de ticket (MCO)</p>
+                    <p>• Maintien technique de nos services webMethods 9.7 (comprenant processus métier et tache)</p>
+                    <p>• Transition en Agile SAFE ( plus de 15 PI plannings dont le premier)</p>
+                    <p>• Assurer la montée en compétence des nouveaux arrivants sur le projet (turn over important dans le projet)</p>
+                    <p>• Utilisation de l'outil Jenkins afin d'automatiser l'intégration continue de l'application</p>
+                    <p>• Création d'une application Angular/Java</p>
+                    <p>• Création d'un outil d'évaluation d'éco-conception sur une application J2E</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Stage Développeur PHP/SQL</h4>
+                    <p class="date">Avril - Juin 2015 | Auxitec Le Havre</p>
+                    <p>• Amélioration d'une base de données SQL complexe</p>
+                    <p>• Modification des appels dans l'application PHP</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Stage Développeur JSP</h4>
+                    <p class="date">Avril - Juin 2014 | HAROPA</p>
+                    <p>• Création d'une plate-forme logicielle JSP</p>
+                </div>
+            </div>
+
+            <!-- Formations -->
+            <div class="cv-card">
+                <h3>🎓 Formations</h3>
+                <div class="timeline-item">
+                    <h4>LIVE « L'Institut des Vocations pour L'Emploi »</h4>
+                    <p class="date">Sept 2025 - Présent | Live</p>
+                    <p>Formation continue pour l'emploi</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>POEI « Développement orienté Objet J2E »</h4>
+                    <p class="date">Octobre 2016 | Aston - Capgemini</p>
+                    <p>Spécialisation en développement J2E</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Licence Informatique 3ème année</h4>
+                    <p class="date">Février 2016 | Université du Havre</p>
+                    <p>Licence en informatique</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>DUT Informatique</h4>
+                    <p class="date">Juin 2014 | Université du Havre</p>
+                    <p>Diplôme universitaire de technologie</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>BAC Série S, Formation SVT Option Math</h4>
+                    <p class="date">Juin 2012 | Lycée Robert Schuman</p>
+                    <p>Baccalauréat scientifique</p>
+                </div>
+            </div>
+
+            <!-- Compétences Techniques -->
+            <div class="cv-card full-width">
+                <h3>Compétences Techniques</h3>
+                
+                <div class="skills-category">
+                    <h4 class="category-title">Langages</h4>
+                    <div class="skills-grid">
+                        <div class="skill-tag">Java - J2E</div>
+                        <div class="skill-tag">Kotlin</div>
+                        <div class="skill-tag">JavaScript</div>
+                        <div class="skill-tag">PHP</div>
+                        <div class="skill-tag">SQL</div>
+                        <div class="skill-tag">HTML</div>
+                        <div class="skill-tag">CSS</div>
+                        <div class="skill-tag">C#</div>
+                        <div class="skill-tag">JSP</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4 class="category-title">Frameworks / Outils</h4>
+                    <div class="skills-grid">
+                        <div class="skill-tag">MVC Spring</div>
+                        <div class="skill-tag">Spring Boot</div>
+                        <div class="skill-tag">Angular</div>
+                        <div class="skill-tag">React</div>
+                        <div class="skill-tag">Symfony</div>
+                        <div class="skill-tag">WebMethod</div>
+                        <div class="skill-tag">Docker</div>
+                        <div class="skill-tag">Git/GitHub</div>
+                        <div class="skill-tag">Unity</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4 class="category-title">Méthodologies</h4>
+                    <div class="skills-grid">
+                        <div class="skill-tag">Projet Agile</div>
+                        <div class="skill-tag">MVC</div>
+                        <div class="skill-tag">TDD</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4 class="category-title">Tests</h4>
+                    <div class="skills-grid">
+                        <div class="skill-tag">FitNesse Tests</div>
+                        <div class="skill-tag">Tests automatisés</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4 class="category-title">Autres</h4>
+                    <div class="skills-grid">
+                        <div class="skill-tag">Éco-conception logicielle</div>
+                        <div class="skill-tag">Développement Android</div>
+                        <div class="skill-tag">Conception de jeux Unity</div>
+                        <div class="skill-tag">Base de données</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Savoir-être -->
+            <div class="cv-card full-width">
+                <h3>Savoir-être</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag soft">Rigueur et sens du détail</div>
+                    <div class="skill-tag soft">Autonomie</div>
+                    <div class="skill-tag soft">Esprit d'analyse et de synthèse</div>
+                    <div class="skill-tag soft">Esprit d'équipe</div>
+                    <div class="skill-tag soft">Bonne communication</div>
+                    <div class="skill-tag soft">Adaptabilité</div>
+                    <div class="skill-tag soft">Gestion du temps</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivations Section -->
+    <section id="motivations">
+        <h2>Mes Motivations</h2>
+        <div class="motivation-content">
+            <p><strong>Madame, Monsieur,</strong></p>
+            
+            <p class="paragraph">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Passionné par le multimédia et le web, et en recherche d'une opportunité de collaboration en 
+                Normandie (ville natale Le Havre), je suis vivement intéressé par un poste de Développeur 
+                Informatique au sein d'une entreprise innovante et spécialisée dans les technologies du numérique. 
+                Conscient des exigences du poste, suis disposé à effectuer un stage ou une période d'immersion, 
+                afin de vous démontrer concrètement mes compétences et ma capacité d'adaptation.
+            </p>
+            
+            <p class="paragraph">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Diplômé d'une licence en informatique, j'ai établi une bonne maîtrise de plusieurs langages 
+                de programmation ainsi que de bonnes compétences dans la gestion des systèmes d'informations. À 
+                la suite de l'obtention de ce diplôme, afin d'affiner ces connaissances, j'ai pu participer à une POEI 
+                dans le but d'intégrer Capgemini Lille pour un poste d'Ingénieur consultant logiciel JAVA J2E. Cette 
+                formation, gérée par Pôle Emploi, a permis d'améliorer mes compétences pour ce poste.
+            </p>
+            
+            <p class="paragraph">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Tout de suite, j'ai pu intégrer le projet Portail de Raccordement pour le Client ENEDIS. Au 
+                sein d'une TMA pour ce client, j'ai pu intervenir sur l'application constituée de plusieurs briques 
+                applicatives : un portail internet qui permet aux clients d'effectuer leur demande de raccordement et 
+                de suivre l'avancement, un portail Intranet permettant aux agents le traitement desdites demandes et 
+                pour finir une brique technique webMethod exposant des services métiers aux portails et au reste du 
+                SI (connecté avec une dizaine d'applications).
+            </p>
+            
+            <p class="paragraph">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Lors de cette mission j'ai eu l'opportunité de participer à une multitude de missions ainsi que 
+                de rôles : participer aux chantiers techniques et aux évolutions du socle technique du projet, 
+                planifier et suivre des développements, concevoir et développer des versions applicatives, participer 
+                à la gestion des incidents de production (MCO), participer à la transition en Agile SAFE et 
+                l'animation et la mise en place des différentes cérémonies Agile (Daily, Retro, Chiffrage, Demo, PI 
+                Planning …).
+            </p>
+            
+            <p class="paragraph">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                À la suite de cette mission de 4 ans, j'ai pu participer à deux autres missions au sein de 
+                Capgemini. La première, sans client, afin de développer un outil interne dans le but d'évaluer le taux 
+                d'éco-conception d'une application/logiciel grâce à l'outil Prometheus. Et lors de la deuxième 
+                mission, je devais apporter mes connaissances Agile pour un projet SNCF, et augmenter mes 
+                compétences en Java et Angular.
+            </p>
+            
+            <p class="paragraph">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Avec motivation, rigueur et curiosité, je désire mettre à profit mes compétences au sein de 
+                votre entreprise, dont je partage entièrement les principes d'expertise et d'intégration. Je reste à 
+                votre disposition pour toute discussion ou complément d'entretien.
+            </p>
+            
+            <p class="paragraph">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Dans l'attente de votre retour, je vous adresse, Madame, Monsieur, mes salutations 
+                respectueuses.
+            </p>
+            
+            <p class="signature"><strong>REQUIER Corentin</strong></p>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/images/unityJeu.png" alt="Unity" class="project-image">
+                </div>
+                <h3>RPG Unity/C# - Projet personnel</h3>
+                <p>Développement d'un jeu vidéo RPG multijoueur inspiré de l'univers d'Ankama. Plateforme PC avec démo disponible prochainement.</p>
+                <a href="#" class="project-link" target="_blank">En savoir plus →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/images/angular.png" alt="Angular" class="project-image">
+                </div>
+                <h3>Application Angular</h3>
+                <p>Portefolio développée avec Angular, simple et basique afin de faire un brève aperçu de qui je suis et de ce que je fais en plus de mon CV.</p>
+                <a href="https://crequier.fr" class="project-link" target="_blank">Voir le site →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/images/symfony.png" alt="Symfony" class="project-image">
+                </div>
+                <h3>Application Symfony</h3>
+                <p>Portefolio développée avec Symfony, simple et basique afin de faire un brève aperçu de qui je suis et de ce que je fais en plus de mon CV.</p>
+                <a href="https://symfony.crequier.fr" class="project-link" target="_blank">Voir le site →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/images/enedis.png" alt="Enedis" class="project-image">
+                </div>
+                <h3>Application Java/Spring</h3>
+                <p>Application d'entreprise Enedis construite avec Spring MVC, utilisant les meilleures pratiques de développement J2E et WebMethod.</p>
+                <a href="https://enedis.fr" class="project-link" target="_blank">Voir le site →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/images/ecoconception.png" alt="Éco-conception" class="project-image">
+                </div>
+                <h3>Outil d'éco-conception</h3>
+                <p>Développement d'un outil d'évaluation du taux d'éco-conception pour applications J2E, utilisant l'outil Prometheus.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/images/android.png" alt="Android" class="project-image">
+                </div>
+                <h3>Développement Android</h3>
+                <p>Expérience en développement d'applications mobiles Android lors de mes études. Il s'agissait d'un simple jeu sous forme de Space Invaders.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/images/projets.jpg" alt="Projets" class="project-image">
+                </div>
+                <h3>Autres Projets</h3>
+                <p>Découvrez mes autres réalisations, expérimentations et mes projets en cours.</p>
+                <a href="#" class="project-link" target="_blank">Voir le site →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Me Contacter</h2>
+        
+        <!-- Message de succès (affiché si le formulaire a été envoyé) -->
+        <div th:if="${successMessage}" class="alert alert-success">
+            <span th:text="${successMessage}"></span>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div>
+                        <strong>Email</strong>
+                        <p>requier.corentin@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div>
+                        <strong>Téléphone</strong>
+                        <p>+33 6 18 33 60 07</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div>
+                        <strong>Localisation</strong>
+                        <p>76600 Le Havre</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div>
+                        <strong>LinkedIn</strong>
+                        <p><a href="https://linkedin.com/in/corentin-requier-726b05127" target="_blank">linkedin.com/in/corentin-requier</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" th:action="@{/contact}" method="post">
+                <div class="form-group">
+                    <label for="name">Nom complet *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Sujet *</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Corentin REQUIER - Développé avec ❤️ en Kotlin + Spring Boot</p>
+        <p>Hébergé sur Render avec Docker</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
