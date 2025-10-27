@@ -87,6 +87,11 @@ nav a:hover::after {
   text-align: center;      /* Ajouté : centré */
 }
 
+.navbar-link-actif{
+    font-size: 0.8rem;
+    color: var(--accent);
+}
+
 /* Sections */
 section {
   min-height: 100vh;

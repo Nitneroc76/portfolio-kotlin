@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corentin REQUIER - Portfolio</title>
+    <title>Corentin REQUIER - Portfolio Kotlin-Spring</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/kotlinIco.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/kotlinIco.png">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -22,7 +24,7 @@
              - 
             <a href="https://symfony.crequier.fr"  class="navbar-link" target="_blank">Symfony</a>
              - 
-            <a href="#"  class="navbar-link" target="_blank">Kotlin/Spring Boot</a> 
+            <a href="#" class="navbar-link-actif" target="_blank"><b>Kotlin/Spring Boot</b></a> 
         </div>
     </nav>
 
@@ -288,6 +290,15 @@
 
             <div class="project-card">
                 <div class="project-image-container">
+                    <img src="/images/kotlin.png" alt="Symfony" class="project-image">
+                </div>
+                <h3>Application Kotlin/Spring</h3>
+                <p>Portefolio développée avec Kotlin/Spring, découverte de Kotlin tout en faisant un portefolio.</p>
+                <a href="https://portfolio-kotlin.onrender.com/" class="project-link" target="_blank">Voir le site →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container">
                     <img src="/images/enedis.png" alt="Enedis" class="project-image">
                 </div>
                 <h3>Application Java/Spring</h3>
@@ -317,7 +328,7 @@
                 </div>
                 <h3>Autres Projets</h3>
                 <p>Découvrez mes autres réalisations, expérimentations et mes projets en cours.</p>
-                <a href="#" class="project-link" target="_blank">Voir le site →</a>
+                <a href="https://github.com/Nitneroc76" class="project-link" target="_blank">Voir mon Github →</a>
             </div>
         </div>
     </section>
@@ -342,7 +353,7 @@
                 <div class="contact-item">
                     <div>
                         <strong>Téléphone</strong>
-                        <p>+33 6 18 33 60 07</p>
+                        <p>06 18 33 60 07</p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -361,7 +372,7 @@
 
             <form class="contact-form" th:action="@{/contact}" method="post">
                 <div class="form-group">
-                    <label for="name">Nom complet *</label>
+                    <label for="name">Nom *</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 
@@ -387,7 +398,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Corentin REQUIER - Développé avec ❤️ en Kotlin + Spring Boot</p>
+        <p>&copy; 2025 Corentin REQUIER - Développeur Logiciel. Tous droits réservés.</p>
         <p>Hébergé sur Render avec Docker</p>
     </footer>
 
